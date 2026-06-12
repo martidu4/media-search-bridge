@@ -4,6 +4,20 @@ A clean, configurable, lightweight Python script designed to automatically searc
 
 ---
 
+## Requirements / Requisitos
+
+To use this bridge, you need the following services installed and running (typically via Docker):
+Para utilizar este script, necesitas tener instalados y configurados los siguientes servicios (habitualmente mediante Docker):
+
+1. **Radarr** - Movie library manager / Gestor de películas.
+2. **Sonarr** - TV series library manager / Gestor de series de televisión.
+3. **Prowlarr** - Indexer manager that syncs indexers to Radarr and Sonarr / Gestor de indexadores (conecta y sincroniza Prowlarr con Radarr y Sonarr).
+4. **Transmission** - Torrent downloader client / Cliente de descarga de torrents.
+5. **Jellyfin** (Optional / Opcional) - Media server / Servidor de reproducción multimedia.
+6. **Telegram Bot** (Optional / Opcional) - For notifications / Para recibir alertas de estado de descarga e importaciones.
+
+---
+
 ## Features / Características
 
 - 🔍 **Automated Prowlarr Search**: Searches Prowlarr indexers for missing movies in Radarr and missing episodes in Sonarr.
