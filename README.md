@@ -110,7 +110,13 @@ GRABBED_MOVIES_FILE=movies_grabbed.json
 GRABBED_TV_FILE=tv_grabbed.json
 ```
 
+
+> 💡 **Telegram Setup Tip / Tip de configuración de Telegram:**
+> - To get a **Bot Token**, create a bot by talking to `@BotFather` on Telegram. / Para obtener el **Bot Token**, crea un bot hablando con `@BotFather` en Telegram.
+> - To get your **Chat ID**, send a message to `@userinfobot` or `@GetIDsBot` on Telegram. / Para obtener tu **Chat ID**, envía un mensaje a `@userinfobot` o `@GetIDsBot` en Telegram.
+
 ---
+
 
 ## Usage / Uso
 
