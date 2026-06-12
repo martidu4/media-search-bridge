@@ -188,4 +188,4 @@ python3 media_search_cli.py add-series 371986 "Arcane"
 
 ## License / Licencia
 
-MIT License. Feel free to modify and share!
+AGPL-3.0 License. Feel free to modify and share! / Licencia AGPL-3.0. Libre para modificar y compartir.
