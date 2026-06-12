@@ -1,0 +1,6 @@
+config.json
+movies_grabbed.json
+tv_grabbed.json
+__pycache__/
+*.pyc
+.env
