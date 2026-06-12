@@ -150,6 +150,38 @@ crontab -e
 
 ---
 
+## Media Search CLI & Agent Integration / Integración de Agentes y CLI
+
+We have included `media_search_cli.py`, which provides a command-line interface to interact with Radarr and Sonarr. This script can be called directly or integrated with conversational AI agents (such as **OpenClaw**):
+
+Hemos incluido `media_search_cli.py`, que proporciona una interfaz de línea de comandos para interactuar con Radarr y Sonarr. Este script se puede ejecutar directamente o integrar con agentes de IA (como **OpenClaw**):
+
+```bash
+# Make executable / Hacer ejecutable
+chmod +x media_search_cli.py
+
+# Search for a movie / Buscar película
+python3 media_search_cli.py search-movie "Dune Part Two"
+
+# Add a movie using TMDB ID / Añadir película usando ID de TMDB
+python3 media_search_cli.py add-movie 693134 "Dune: Part Two"
+
+# Search for a TV series / Buscar serie
+python3 media_search_cli.py search-series "Arcane"
+
+# Add a TV series using TVDB ID / Añadir serie usando ID de TVDB
+python3 media_search_cli.py add-series 371986 "Arcane"
+```
+
+### 🤖 How the Telegram Bot request works / Cómo funciona la petición por Telegram:
+
+1. **Conversational Bot (OpenClaw)**: If you run **OpenClaw**, the AI Agent (e.g., *Mikasa*) listens to your Telegram chat.
+2. **Adding Media**: When you send a message like *"búscame la peli Dune 2"*, the Agent translates this request, uses `media_search_cli.py` to perform the search, displays results for confirmation, and adds it to Radarr/Sonarr.
+3. **Spanish Search & Import (Bridge)**: The background cron job running `bridge.py` detects the newly added missing item, finds the best Castellano torrent via Prowlarr, sends it to Transmission, imports the files, and notifies you back on Telegram when it's ready.
+
+---
+
+
 ## License / Licencia
 
 MIT License. Feel free to modify and share!
