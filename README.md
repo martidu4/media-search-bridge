@@ -179,6 +179,10 @@ python3 media_search_cli.py add-series 371986 "Arcane"
 2. **Adding Media**: When you send a message like *"búscame la peli Dune 2"*, the Agent translates this request, uses `media_search_cli.py` to perform the search, displays results for confirmation, and adds it to Radarr/Sonarr.
 3. **Spanish Search & Import (Bridge)**: The background cron job running `bridge.py` detects the newly added missing item, finds the best Castellano torrent via Prowlarr, sends it to Transmission, imports the files, and notifies you back on Telegram when it's ready.
 
+> 💡 **LLM Note / Nota sobre LLM:**
+> - **Bridge (`bridge.py`)**: Does **NOT** require any LLM. It is standard Python logic. / **NO** necesita ningún LLM. Es código Python estándar sin inteligencia artificial.
+> - **Conversational Bot (Telegram/OpenClaw)**: Requires an LLM (such as local **Ollama** or external APIs like **OpenRouter/Gemini**) to parse natural language messages. / Requiere un LLM (como **Ollama** en local o APIs externas como **OpenRouter/Gemini**) para poder entender y procesar el lenguaje natural de los mensajes.
+
 ---
 
 
