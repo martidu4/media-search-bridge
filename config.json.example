@@ -1,0 +1,41 @@
+{
+  "radarr": {
+    "url": "http://localhost:7878/api/v3",
+    "api_key": "YOUR_RADARR_API_KEY",
+    "root_folder_path": "/movies",
+    "quality_profile_id": 1
+  },
+  "sonarr": {
+    "url": "http://localhost:8989/api/v3",
+    "api_key": "YOUR_SONARR_API_KEY",
+    "root_folder_path": "/tv",
+    "quality_profile_id": 1
+  },
+  "prowlarr": {
+    "url": "http://localhost:9696",
+    "api_key": "YOUR_PROWLARR_API_KEY"
+  },
+  "transmission": {
+    "url": "http://localhost:9091/transmission/rpc",
+    "username": "admin",
+    "password": "your_password",
+    "download_dir_movies": "/downloads/radarr",
+    "download_dir_tv": "/downloads/tv-sonarr"
+  },
+  "jellyfin": {
+    "url": "http://localhost:8096",
+    "api_key": "YOUR_JELLYFIN_API_KEY"
+  },
+  "telegram": {
+    "bot_token": "YOUR_TELEGRAM_BOT_TOKEN",
+    "chat_id": "YOUR_TELEGRAM_CHAT_ID"
+  },
+  "paths": {
+    "grabbed_movies_file": "movies_grabbed.json",
+    "grabbed_tv_file": "tv_grabbed.json",
+    "destination_movies_dir": "/mnt/datos/complete/Pelis",
+    "destination_tv_dir": "/mnt/datos/complete/Series",
+    "transmission_movies_dir_on_host": "/mnt/datos/complete/radarr",
+    "transmission_tv_dir_on_host": "/mnt/datos/complete/tv-sonarr"
+  }
+}
